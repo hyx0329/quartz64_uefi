@@ -114,6 +114,10 @@ for board in ${RKUEFIBOARDS}; do
 		build_uefi Radxa Zero-3W
 		build_fit Zero-3W rk3566-radxa-zero-3w
 		;;
+	ROCK3A)
+		build_uefi Radxa Rock3A
+		build_fit Rock3A rk3568-rock-3a
+		;;
 	*)
 		echo "Unknown board ${board}"
 		exit 1
